@@ -4,64 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Lógica</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
   
 </head>
 <body>
   <div id="calc">
-    <div class="caixa_text" >
-        <input type="text">
+    <div class="caixa_text">
+        <textarea name="visor" id="visor" cols="30" ></textarea>
     </div>
     <div id="btn_container">
-      <button class="btn btn_diferente">CE</button>
-      <button class="btn btn_diferente">C</button>
-      <button class="btn btn_diferente">DEL</button>
-      <button class="btn btn_diferente">(</button>
-      <button class="btn btn_diferente">)</button>
+      <button class="btn btn_diferente" onclick="limpar()">AC</button>
+      <button class="btn btn_diferente" onclick="back()">C</button>
+      <button class="btn btn_diferente" onclick="back()">&#9003</button>
+      <button class="btn btn_diferente" onclick="insert('&#40;')">&#40;</button>
+      <button class="btn btn_diferente" onclick="insert('&#41;')">&#41;</button>
       
-      <button class="btn">A</button>
-      <button class="btn">B</button>
-      <button class="btn">C</button>
-      <button class="btn">D</button>
-      <button class="btn btn_diferente">∧</button>
+      <button class="btn" onclick="insert('A')">A</button>
+      <button class="btn" onclick="insert('B')">B</button>
+      <button class="btn" onclick="insert('C')">C</button>
+      <button class="btn" onclick="insert('D')">D</button>
+      <button class="btn btn_diferente" onclick="insert('∧')">∧</button>
 
-      <button class="btn">E</button>
-      <button class="btn">F</button>
-      <button class="btn">G</button>
-      <button class="btn">H</button>
-      <button class="btn btn_diferente">∨</button>
+      <button class="btn" onclick="insert('E')">E</button>
+      <button class="btn" onclick="insert('F')">F</button>
+      <button class="btn" onclick="insert('G')">G</button>
+      <button class="btn" onclick="insert('H')">H</button>
+      <button class="btn btn_diferente" onclick="insert('∨')">∨</button>
 
-      <button class="btn">I</button>
-      <button class="btn">J</button>
-      <button class="btn">K</button>
-      <button class="btn">L</button>
-      <button class="btn btn_diferente">→</button>
+      <button class="btn" onclick="insert('I')">I</button>
+      <button class="btn" onclick="insert('J')">J</button>
+      <button class="btn" onclick="insert('K')">K</button>
+      <button class="btn" onclick="insert('L')">L</button>
+      <button class="btn btn_diferente" onclick="insert('→')">→</button>
 
-      <button class="btn">M</button>
-      <button class="btn">N</button>
-      <button class="btn">O</button>
-      <button class="btn">P</button>
-      <button class="btn btn_diferente">¬</button>
+      <button class="btn" onclick="insert('M')">M</button>
+      <button class="btn" onclick="insert('N')">N</button>
+      <button class="btn" onclick="insert('O')">O</button>
+      <button class="btn" onclick="insert('P')">P</button>
+      <button class="btn btn_diferente" onclick="insert('¬')">¬</button>
 
-      <button class="btn">Q</button>
-      <button class="btn">R</button>
-      <button class="btn">S</button>
-      <button class="btn">T</button>
-      <button class="btn btn_diferente">↔</button>
+      <button class="btn" onclick="insert('Q')">Q</button>
+      <button class="btn" onclick="insert('R')">R</button>
+      <button class="btn" onclick="insert('S')">S</button>
+      <button class="btn" onclick="insert('T')">T</button>
+      <button class="btn btn_diferente" onclick="insert('↔')">↔</button>
 
-      <button class="btn">U</button>
-      <button class="btn">V</button>
-      <button class="btn">W</button>
-      <button class="btn">X</button>
-      <button class="btn">Y</button>
+      <button class="btn" onclick="insert('U')">U</button>
+      <button class="btn" onclick="insert('V')">V</button>
+      <button class="btn" onclick="insert('W')">W</button>
+      <button class="btn" onclick="insert('X')">X</button>
+      <button class="btn" onclick="insert('Y')">Y</button>
 
-      <button class="btn" id="ultima_letra">Z</button>
-      <button class="btn btn_diferente" id="igual">=</button>
+      <button class="btn" id="ultima_letra" onclick="insert('Z')">Z</button>
+      <button class="btn btn_diferente" id="igual" onclick="resultado()">=</button>
         
     </div>
   </div>
 
-  <script src="calculadora.js"></script>
+  <script src="/js/scripts.js"></script>
 </body>
 </html>
