@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background-color: #302e2e;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  padding: 3rem;
+}
+#calc {
+  background-color: #908f8f;
+  width: 500px;
+  padding: 0.5;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+
+  
+}
+.caixa_text{
+  display: flex;
+  padding: 20px;
+
+  textarea{
+      width: 100%;
+      padding: 1.5rem;
+      font-size: 1.5rem;
+      border: none;
+      outline: none;
+      border-radius: 10px ;
+  }	
+}
+
+#btn_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2px;
+  padding: 20px;
+  
+  button{
+      padding: 1rem;
+      font-size: 1.4rem;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: 0.3s;
+      &:hover{
+          background-color: rgb(208, 200, 200);
+      }
+  }
+}
+.btn_diferente{
+  background-color: rgb(90, 106, 209);
+
+  &:hover{
+      background-color: rgb(112, 129, 241) !important; 
+  }
+}
+#ultima_letra{
+  grid-column: 2/3;
+}
+#igual{
+  background-color: #f5a623;
+  grid-column: 4/6;
+
+  &:hover{
+      background-color: #f7b954 !important;
+  }
+}
+
