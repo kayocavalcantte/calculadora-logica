@@ -6,7 +6,6 @@
 }
 body{
   background-color: #302e2e;
-  color: black;
   display: flex;
   justify-content: center;
   align-items: center ;
@@ -34,6 +33,7 @@ body{
       border: none;
       outline: none;
       border-radius: 10px ;
+      color: black;
   }	
 }
 
@@ -44,22 +44,23 @@ body{
   padding: 20px;
   
   button{
-      padding: 1rem;
-      font-size: 1.4rem;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-      transition: 0.3s;
-      &:hover{
-          background-color: rgb(208, 200, 200);
-      }
+    color: black;
+    padding: 1rem;
+    font-size: 1.4rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    &:hover{
+        background-color: rgb(208, 200, 200);
+    }
   }
 }
 .btn_diferente{
   background-color: rgb(90, 106, 209);
 
   &:hover{
-      background-color: rgb(112, 129, 241) !important; 
+    background-color: rgb(112, 129, 241) !important; 
   }
 }
 #ultima_letra{
@@ -70,7 +71,7 @@ body{
   grid-column: 4/6;
 
   &:hover{
-      background-color: #f7b954 !important;
+    background-color: #f7b954 !important;
   }
 }
 
