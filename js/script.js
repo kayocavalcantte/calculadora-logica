@@ -6,6 +6,7 @@ function insert(text){
 }
 function limpar(limpa){
   document.getElementById('visor').innerHTML = ""
+  document.getElementById('tableContainer').innerHTML = ""
 }
 function back(){
   var texto = document.getElementById('visor').innerHTML 
@@ -50,3 +51,4 @@ window.insert = insert;
 window.limpar = limpar;
 window.back = back;
 window.resultado = resultado;
+
