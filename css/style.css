@@ -11,6 +11,7 @@ body{
   align-items: center ;
   padding: 3rem;
 }
+
 #calc {
   background-color: #908f8f;
   width: 500px;
@@ -74,6 +75,31 @@ body{
     background-color: #f7b954 !important;
   }
 }
+
+#tableContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  background-color: white;
+  margin: 10px;
+  table{
+    border-collapse: collapse;
+    width: 100%;
+    th{
+      background-color: #f5a623;
+      border: 2px solid #302e2e;
+      padding: 1rem;
+      text-align: center;
+    }
+    td{
+      border: 1px solid #302e2e;
+      padding: 1rem;
+      text-align: center;
+    }
+  }
+}
+
 
 /* VERSAO MOBILE */
 
