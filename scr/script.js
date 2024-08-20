@@ -1,4 +1,4 @@
-import { mountTruthTable } from 'logical-expressions-solver';
+const { mountTruthTable } = require('logical-expressions-solver');
 
 function insert(text){
   var texto = document.getElementById('visor').innerHTML 
